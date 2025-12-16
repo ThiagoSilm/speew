@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ANDROID_SDK_ROOT: ${{ runner.temp }}/android-sdk
 
     steps:
     - name: Checkout
@@ -24,8 +26,31 @@ jobs:
         distribution: 'temurin'
         java-version: '11'
 
+    - name: Setup Android SDK (command-line tools & components)
+      run: |
+        set -euo pipefail
+        echo "Setting up Android SDK in $ANDROID_SDK_ROOT"
+        mkdir -p "$ANDROID_SDK_ROOT/cmdline-tools"
+        curl -fsSL "https://dl.google.com/android/repository/commandlinetools-linux-9477386_latest.zip" -o cmdline.zip
+        unzip -q cmdline.zip -d "$ANDROID_SDK_ROOT/cmdline-tools"
+        if [ -d "$ANDROID_SDK_ROOT/cmdline-tools/cmdline-tools" ]; then
+          mv "$ANDROID_SDK_ROOT/cmdline-tools/cmdline-tools" "$ANDROID_SDK_ROOT/cmdline-tools/latest" || true
+        fi
+        mkdir -p "$ANDROID_SDK_ROOT/licenses"
+        export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH"
+        yes | sdkmanager --sdk_root="$ANDROID_SDK_ROOT" --install "platform-tools" "platforms;android-33" "build-tools;33.0.2" || true
+        yes | sdkmanager --sdk_root="$ANDROID_SDK_ROOT" --licenses || true
+      env:
+        JAVA_HOME: ${{ env.JAVA_HOME }}
+
     - name: Ensure Android platform files
       run: flutter create --platforms=android .
+
+    - name: Configure Flutter Android SDK
+      run: |
+        flutter config --android-sdk $ANDROID_SDK_ROOT || true
+        export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
+        flutter doctor -v || true
 
     - name: Get dependencies
       run: flutter pub get
