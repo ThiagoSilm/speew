@@ -1,0 +1,46 @@
+name: speew
+description: Speew - Rede P2P Offline com Speew Trust Tokens (STT) - App descentralizado com mesh networking
+version: 1.0.1+2
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  shared_preferences: ^2.2.2
+  flutter:
+    sdk: flutter
+  
+  # Criptografia
+  cryptography: ^2.5.0
+  pointycastle: ^3.7.3
+  crypto: ^3.0.3
+  
+  # Banco de dados local
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  
+  # Networking P2P
+  nearby_connections: ^3.1.0
+  flutter_nearby_connections: ^1.1.2
+  
+  # Bluetooth
+  flutter_blue_plus: ^1.14.0
+  
+  # UUID
+  uuid: ^4.1.0
+  
+  # Estado e gerenciamento
+  provider: ^6.1.1
+  
+  # UI
+  cupertino_icons: ^1.0.6
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
