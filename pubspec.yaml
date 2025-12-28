@@ -1,0 +1,41 @@
+name: speew
+description: Speew Alpha-1 - Rede P2P Offline Mesh (SDA - Single Document Architecture)
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Networking P2P (Versão Congelada)
+  nearby_connections: 3.3.0
+  
+  # Criptografia (Versão Congelada)
+  cryptography: 2.7.0
+  
+  # Estado e gerenciamento (Versão Congelada)
+  provider: 6.1.1
+  
+  # Armazenamento seguro (Versão Congelada)
+  flutter_secure_storage: 9.0.0
+  
+  # Gerenciamento de Permissões (Nova Dependência)
+  permission_handler: 11.3.1
+  
+  # Áudio (Nova Dependência)
+  just_audio: 0.9.38
+  
+  # UI
+  cupertino_icons: ^1.0.6
+  # Path provider (arquivo caixa-preta)
+  path_provider: ^2.0.14
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
