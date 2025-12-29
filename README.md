@@ -62,7 +62,6 @@ O Speew não apenas criptografa, ele se esconde. A arquitetura de segurança foi
 
 **Atenção:** O consumo de CPU e bateria é um risco gerenciado. O uso de AES-GCM e tráfego falso (**Decoy Traffic**) é um trade-off necessário para a sobrevivência. Monitore o *Thermal Throttling* em dispositivos Android e iOS. (Ver `lib/ui/screens/energy_settings_screen.dart`).
 
-### Pré-requisitos
 
 ### Pré-requisitos
 - Flutter SDK (versão estável mais recente)
