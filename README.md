@@ -4,7 +4,7 @@
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)
 ![Versão](https://img.shields.io/badge/version-2.0.0-blue)
 
-**Sp**Speew** é uma **Plataforma de Infraestrutura de Comunicação Tática (PICT)** descentralizada e 100% offline. Projetada para operação em ambientes de alto risco, ela garante comunicação anônima, efêmera e resistente à censura. Desenvolvido em Flutter, o sistema permite que nós se comuniquem sem depender de infraestrutura de internet, utilizando Wi-Fi Direct e Bluetooth Mesh. Speew não é um "app de mensagens", mas uma arma de infraestrutura de sobrevivência.
+**Speew** é uma **Plataforma de Infraestrutura de Comunicação Tática (PICT)** descentralizada e 100% offline. Projetada para operação em ambientes de alto risco, ela garante comunicação anônima, efêmera e resistente à censura. Desenvolvido em Flutter, o sistema permite que nós se comuniquem sem depender de infraestrutura de internet, utilizando Wi-Fi Direct e Bluetooth Mesh. Speew não é um "app de mensagens", mas uma arma de infraestrutura de sobrevivência.
 
 > **Missão:** Ser a principal ferramenta de comunicação na era da vigilância, garantindo privacidade e liberdade de expressão mesmo em ambientes totalmente desconectados.
 
@@ -58,7 +58,7 @@ O Speew não apenas criptografa, ele se esconde. A arquitetura de segurança foi
 
 ## 🚀 Como Executar o Projeto
 
-**S**SELO ALPHA-1 CONCLUÍDO:** O código-fonte atual representa a versão mais estável e segura do Speew, com todas as otimizações de ofuscação e criptografia aplicadas. O sistema está pronto para o salto para a **MISSÃO BETA (MULTI-HOP)**..
+**SELO ALPHA-1 CONCLUÍDO:** O código-fonte atual representa a versão mais estável e segura do Speew, com todas as otimizações de ofuscação e criptografia aplicadas. O sistema está pronto para o salto para a **MISSÃO BETA (MULTI-HOP)**..
 
 **Atenção:** O consumo de CPU e bateria é um risco gerenciado. O uso de AES-GCM e tráfego falso (**Decoy Traffic**) é um trade-off necessário para a sobrevivência. Monitore o *Thermal Throttling* em dispositivos Android e iOS. (Ver `lib/ui/screens/energy_settings_screen.dart`).
 
