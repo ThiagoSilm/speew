@@ -90,6 +90,7 @@ O Speew é um projeto open-source e precisamos de ajuda, especialmente em:
  * Dê um Commit nas suas alterações (git commit -m 'Adicionando nova feature').
  * Dê um Push na Branch (git push origin feature/NovaFeature).
  * Abra um Pull Request.
+
 📜 Licença
 Distribuído sob a licença MIT. Veja LICENSE para mais informações.
 📧 Contato
