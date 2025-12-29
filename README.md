@@ -92,7 +92,9 @@ O Speew é um projeto open-source e precisamos de ajuda, especialmente em:
  * Abra um Pull Request.
 
 📜 Licença
-Distribuído sob a licença MIT. Veja LICENSE para mais informações.
+Distribuído sob a licença MIT. 
+Veja LICENSE para mais informações.
+
 📧 Contato
 Maciel - speewp2p@outlook.com
 Link do Projeto: https://github.com/Speew/speew
